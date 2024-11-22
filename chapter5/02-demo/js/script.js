@@ -56,8 +56,9 @@ const lists = [
     const content = `
     <div>
         <img src="images/${lists[i].img}" alt="">
-        <h2>${lists[i].name}<h2><p>000円</P>
-    </div>`;
+        <h2>${lists[i].name}<h2>
+        <p>${price}円</P>
+    </div>`
     menu.insertAdjacentHTML('beforeend', content);
 }
 

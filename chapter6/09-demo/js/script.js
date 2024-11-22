@@ -1,14 +1,22 @@
+//imgアイテムを取得、扱えるようにしている。
 const items = document.querySelectorAll('.img-item');
-//console.log(items);
 
-for (let i = 0; i < items.length; i++) {
+for (let i = 0;1 < items.length; i++) {
+  console.log(items[i]);
+
   const keyframes = {
-    opacity: [0, 1]
+    opacity: [0, 1],
+    rotate:['5deg',0],
+    scale:[1.1, 1]
   };
+
+
   const options = {
     duration: 600,
     delay: i * 300,
     fill: 'forwards',
   };
+
   items[i].animate(keyframes, options);
+
 }
